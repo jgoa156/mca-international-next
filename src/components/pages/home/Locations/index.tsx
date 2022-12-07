@@ -39,7 +39,7 @@ export default function Locations() {
 
               <div>
                 <h4>
-                  <a href={location.link} target="_blank">
+                  <a href={location.link} target="_blank" rel="noreferrer">
                     {location.title} - {location.subtitle}<i className="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 </h4>
@@ -48,7 +48,7 @@ export default function Locations() {
               </div>
 
               <div className="hover">
-                <ButtonLink href={location.link} target="_blank">
+                <ButtonLink href={location.link} target="_blank" rel="noreferrer">
                   <i className="fas fa-location-dot" />
                   View in Maps
                 </ButtonLink>

@@ -42,7 +42,7 @@ export default function Header() {
       setScrolled(window.scrollY >= bannerHeight - 50);
       setShowGoToTop(window.scrollY >= bannerHeight + 50);
     });
-  }, []);
+  }, [bannerHeight]);
 
   return (
     <HeaderWrapper scrolled={scrolled}>

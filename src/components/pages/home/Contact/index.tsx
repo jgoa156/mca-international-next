@@ -27,7 +27,7 @@ export default function Contact() {
 
           <Contacts>
             {contacts.map((contact, index) =>
-              <a key={index} href={contact.link} target="_blank">
+              <a key={index} href={contact.link} target="_blank" rel="noreferrer">
                 <i className={contact.icon} />
                 {contact.contact}
               </a>

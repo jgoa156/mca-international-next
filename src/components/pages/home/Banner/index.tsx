@@ -25,7 +25,7 @@ export default function Banner() {
         setParallaxY(`calc(50% - ${y / 10}%)`);
       }
     });
-  }, []);
+  }, [bannerHeight]);
 
   return (
     <SectionWrapper id="banner">
