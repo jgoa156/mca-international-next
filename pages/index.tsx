@@ -2,8 +2,12 @@ import React from "react";
 import { NextSeo } from "next-seo";
 
 import Banner from "components/pages/home/Banner";
-import WhatWeDo from "components/pages/home/WhatWeDo";
+import Summary from "components/pages/home/Summary";
 import About from "components/pages/home/About";
+import Sectors from "components/pages/home/Sectors";
+import Supply from "components/pages/home/Supply";
+import Locations from "components/pages/home/Locations";
+import Clients from "components/pages/home/Clients";
 
 export default function Home() {
   const SEO = {
@@ -15,7 +19,15 @@ export default function Home() {
 
   return (
     <>
-      <NextSeo
+      <Banner />
+      <Summary />
+      <About />
+      <Sectors />
+      <Supply />
+      <Locations />
+      <Clients />
+
+      {/*<NextSeo
         title={SEO.title}
         description={SEO.description}
         canonical={SEO.url}
@@ -106,11 +118,7 @@ export default function Home() {
           site: "@site",
           cardType: "summary_large_image",
         }}
-      />
-
-      <Banner />
-      <WhatWeDo />
-      <About />
+      />*/}
     </>
   );
 }

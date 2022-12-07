@@ -11,14 +11,14 @@ export const HeaderWrapper = styled.header`
 	justify-content: center;
 	align-items: center;
 
-	background-color: ${props => props.scrolled ? `black` : `transparent`};
-	transition: 0.5s;
+	background-color: ${props => props.scrolled ? `white` : `transparent`};
+	transition: 0.3s;
 	box-shadow: ${props => props.scrolled ? `0 0 10px rgba(0, 0, 0, 0.4)` : `none`};
 
 	nav {
 		height: fit-content;
 		width: 100%;
-		max-width: 1600px;
+		max-width: 1400px;
 		padding: 0 20px;
 
 		display: flex;
@@ -28,6 +28,7 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const TitleWrapper = styled.div`
+  opacity: ${props => props.scrolled ? "1" : "0"};
 	height: fit-content;
 	transition: 0.3s;
 
@@ -39,14 +40,14 @@ export const TitleWrapper = styled.div`
 
 export const LinkWrapper = styled.div`
 	height: fit-content;
-	padding: 0 30px;
+	padding-left: 30px;
 
 	ul {
 		margin: 0;
 	}
 	a {
 		padding-bottom: 6px;
-		margin-left: 15px;
+		margin-left: 20px;
 
 		font-size: 1.825rem;
 		font-family: "Parkson";
@@ -62,7 +63,7 @@ export const LinkWrapper = styled.div`
 		}
 
 		&, &:visited, &:active, &:focus {
-			color: white;
+			color:  ${props => props.scrolled ? "var(--primary-color-2)" : "var(--text-dark-color)"};
 		}
 		&:hover {
 			color: var(--secondary-color-2);
@@ -140,7 +141,7 @@ export const Sidenav = styled.div`
 	min-height: 150%;
 	width: 45%;
 
-	background-color: var(--color-3);
+	background-color: var(--text-default-color);
 	overflow: hidden;
 	word-wrap: break-word;
 	white-space: nowrap;

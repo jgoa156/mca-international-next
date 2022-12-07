@@ -40,9 +40,18 @@ export const Card = styled.div`
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  p {
-    color: var(--muted);
+  ul {
     margin-bottom: 0;
+    color: var(--muted);
+    text-align: left;
+
+    li {
+      margin-bottom: 5px;
+
+      &::marker {
+        font-size: 0.5rem;
+      }
+    }
   }
 
   &:after {

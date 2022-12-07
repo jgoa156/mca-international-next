@@ -27,11 +27,16 @@ export default function Header() {
   const [showSidenav, setShowSidenav] = useState(false);
 
   const links = [
-    { title: "About us", href: "about-us" },
+    { title: "About us", href: "about" },
+    { title: "Sectors & Industries", href: "sectors" },
+    { title: "What we supply", href: "supply" },
+    { title: "Locations", href: "locations" },
+    { title: "Our clients", href: "clients" },
+    { title: "Contact us", href: "contact" },
   ];
 
   // Go to top
-  const bannerHeight = isTablet ? 400 : 500;
+  const bannerHeight = isMobile ? 500 : 700;
   useEffect(() => {
     setLoaded(true);
     window.addEventListener("scroll", () => {
@@ -49,14 +54,14 @@ export default function Header() {
   return (
     <HeaderWrapper scrolled={scrolled}>
       <nav>
-        <TitleWrapper>
+        <TitleWrapper scrolled={scrolled}>
           <img src={`${process.env.img}/logo.png`} />
         </TitleWrapper>
 
         {loaded
           ? !isTablet
             ? (
-              <LinkWrapper>
+              <LinkWrapper scrolled={scrolled}>
                 <Scrollspy items={links.map((link) => link.href)} currentClassName={"spy"} offset={-100}>
                   {links.map((link, index) => {
                     return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
@@ -87,7 +92,7 @@ export default function Header() {
                 </button>
               </div>
 
-              <LinkWrapper>
+              <LinkWrapper scrolled={scrolled}>
                 {links.map((link, index) => {
                   return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
                 })}

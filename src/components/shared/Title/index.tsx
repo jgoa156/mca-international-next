@@ -1,9 +1,28 @@
-import React from "react";
+import styled from 'styled-components';
 
-import { TitleComponent } from "./components";
+const Title = styled.h2`
+	margin-bottom: 50px;
+	
+	color: var(--primary-color-2);
+	font-size: 2.6rem;
+	font-family: "Parkson";
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
 
-export default function Title({ ...props }) {
-  return <TitleComponent {...props}>
-    {props.children}
-  </TitleComponent>;
-}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&:after {
+		width: 50px;
+		height: 2px;
+		display: block;
+
+		background-image: linear-gradient(to right, var(--secondary-color-2), var(--secondary-color));
+		content: "";
+	};
+`;
+
+export default Title;

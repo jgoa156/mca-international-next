@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Dropdown } from "react-bootstrap";
 
 export const SectionWrapper = styled.section`
 	width: 100%;
@@ -16,22 +15,34 @@ export const SectionWrapper = styled.section`
 	z-index: 5;
 
 	& > div:nth-child(2) {
-		width: 100%;
-		max-width: 1600px;
+    width: 100%;
     height: 100%;
+
+    display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
 		position: absolute;
 		top: 0;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+    background-color: rgba(61, 94, 150, 0.4);
+
+    & > div {
+      width: 100%;
+		  max-width: 1400px;
+      height: 100%;
+
+      display: flex;
+		  justify-content: flex-start;
+		  align-items: center;
+    }
 	}
 
 	@media (max-width: 1024px) {
 		height: 700px;
 	}
 	@media (max-width: 575px) {
-		height: 600px;
+		height: 500px;
 	}
 `;
 
@@ -64,19 +75,40 @@ export const Background = styled.img`
 
 export const Intro = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: baseline;
+  justify-content: flex-end;
+  flex-direction: column;
 
   width: 100%;
   height: 100%;
+
+  margin: 0 50px 250px;
 	
+  img {
+    height: 120px;
+    width: auto;
+    object-fit: cover;
+
+    margin-bottom: 30px;
+  }
+
 	h1 {
-    text-align: center;
+    margin-bottom: 30px;
 
-		font-size: 5rem;
-		font-family: "Parkson";
+		font-size: 1.6rem;
     color: var(--text-dark-color);
+    text-align: left;
+	}
 
-    margin-bottom: -300px;
+  @media (max-width: 575px) {
+    margin: 0 35px 100px;
+
+		img {
+      height: 75px;
+    };
+
+    h1 {
+      font-size: 1.2rem;
+    }
 	}
 `;

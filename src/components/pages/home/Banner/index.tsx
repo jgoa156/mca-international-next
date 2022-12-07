@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
-import FadeIn from "components/shared/Animations/FadeIn";
+import ButtonLink from "components/shared/ButtonLink";
 
 import {
   SectionWrapper,
@@ -34,14 +34,23 @@ export default function Banner() {
       </BackgroundWrapper>
 
       <div>
-        <FadeIn showOnLoad={true}>
+        <div>
           <Intro>
+            <img src={`${process.env.img}/logo-full.png`} />
+
             <h1>
-              Lorem ipsum dolor sit<br />
-              ametconsectetur adipiscing elit
+              We supply all your industrial needs,
+              <br />all from one single source
             </h1>
+
+            <div>
+              <ButtonLink href="#contact-us">
+                <i className="fas fa-envelope" />
+                Contact us
+              </ButtonLink>
+            </div>
           </Intro>
-        </FadeIn>
+        </div>
       </div>
     </SectionWrapper>
   );
