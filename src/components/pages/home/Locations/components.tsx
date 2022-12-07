@@ -88,7 +88,7 @@ export const Card = styled.div`
   @media (max-width: 575px) {
 		margin-bottom: 30px;
 
-    img {
+    img, & > div.hover {
       height: 200px;
     }
 	}
