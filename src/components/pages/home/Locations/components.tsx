@@ -39,10 +39,10 @@ export const Card = styled.div`
 
 		h4 {
       font-weight: bold;
-			font-size: 1rem;
+			font-size: 1.125rem;
 
       a {
-        color: var(--primary-color-2);
+        color: var(--secondary-color-2);
         text-decoration: none;
         transition: 0.3s;
 
@@ -84,4 +84,12 @@ export const Card = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 575px) {
+		margin-bottom: 30px;
+
+    img {
+      height: 200px;
+    }
+	}
 `;

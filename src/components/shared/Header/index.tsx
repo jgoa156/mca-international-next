@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Scrollspy from "react-scrollspy";
-import disableScroll from "disable-scroll";
 
 import {
   HeaderWrapper,
@@ -45,17 +44,11 @@ export default function Header() {
     });
   }, []);
 
-  // Lock scroll
-  /*useEffect(() => {
-    if (showSidenav) disableScroll.on();
-    else disableScroll.off();
-  }, [showSidenav]);*/
-
   return (
     <HeaderWrapper scrolled={scrolled}>
       <nav>
         <TitleWrapper scrolled={scrolled}>
-          <img src={`${process.env.img}/logo.png`} />
+          <img src={`${process.env.img}/logo-color.png`} />
         </TitleWrapper>
 
         {loaded
@@ -70,7 +63,7 @@ export default function Header() {
               </LinkWrapper>
             )
             : (
-              <Burger onClick={() => setShowSidenav(true)} aria-expanded={showSidenav}>
+              <Burger scrolled={scrolled} onClick={() => setShowSidenav(true)} aria-expanded={showSidenav}>
                 <i className={"fas fa-bars"} />
               </Burger>
             )
@@ -92,7 +85,7 @@ export default function Header() {
                 </button>
               </div>
 
-              <LinkWrapper scrolled={scrolled}>
+              <LinkWrapper scrolled={true}>
                 {links.map((link, index) => {
                   return <a key={index} href={`#${link.href}`} data-to-scrollspy-id={link.href}>{link.title}</a>
                 })}
@@ -100,9 +93,8 @@ export default function Header() {
             </div>
           </Sidenav>
 
-          {showSidenav
-            ? <SidenavBackground onClick={() => setShowSidenav(false)} show={showSidenav} />
-            : null
+          {showSidenav &&
+            <SidenavBackground onClick={() => setShowSidenav(false)} show={showSidenav} />
           }
         </>)
         : null

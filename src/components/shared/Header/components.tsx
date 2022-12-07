@@ -46,12 +46,11 @@ export const LinkWrapper = styled.div`
 		margin: 0;
 	}
 	a {
-		padding-bottom: 6px;
+		padding-bottom: 8px;
 		margin-left: 20px;
 
 		font-size: 1.825rem;
 		font-family: "Parkson";
-		font-weight: bold;
 		text-transform: uppercase;
 		text-decoration: none;
 		border-bottom: 2px solid transparent;
@@ -121,7 +120,7 @@ export const GoToTop = styled.a`
 export const Burger = styled.button`
 	justify-self: flex-end;
 
-	color: white;
+	color:  ${props => props.scrolled ? "var(--primary-color-2)" : "var(--text-dark-color)"};
 	font-size: 1.4rem;
 	background-color: transparent;
 	border: none;
@@ -141,7 +140,7 @@ export const Sidenav = styled.div`
 	min-height: 150%;
 	width: 45%;
 
-	background-color: var(--text-default-color);
+	background-color: white;
 	overflow: hidden;
 	word-wrap: break-word;
 	white-space: nowrap;
@@ -165,7 +164,7 @@ export const Sidenav = styled.div`
 		padding-right: 2px;
 
 		button.close {
-			color: white;
+			color: var(--primary-color-2);
 			font-size: 1.4rem;
 			background-color: transparent;
 			border: none;

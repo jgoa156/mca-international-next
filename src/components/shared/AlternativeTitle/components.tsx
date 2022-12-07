@@ -22,4 +22,12 @@ export const AlternativeTitleStyled = styled.h2`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media (max-width: 575px) {
+		font-size: 2.2rem;
+
+    i {
+      font-size: 1.6rem;
+    }
+	}
 `;

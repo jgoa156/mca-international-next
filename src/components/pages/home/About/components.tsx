@@ -3,7 +3,12 @@ import styled from "styled-components";
 export const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   grid-gap: 40px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 65%;
+	}
 
   @media (max-width: 575px) {
 		display: block;
@@ -62,5 +67,6 @@ export const Card = styled.div`
 
   @media (max-width: 575px) {
 		margin-bottom: 30px;
+    padding: 40px 20px;
 	}
 `;

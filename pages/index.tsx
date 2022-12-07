@@ -8,14 +8,15 @@ import Sectors from "components/pages/home/Sectors";
 import Supply from "components/pages/home/Supply";
 import Locations from "components/pages/home/Locations";
 import Clients from "components/pages/home/Clients";
+import Contact from "components/pages/home/Contact";
 
 export default function Home() {
-  const SEO = {
+  /*const SEO = {
     title: "MCA International",
     description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
     url: "https://guilherme.vercel.app",
     image: "/img/SEO/preview.jpg"
-  };
+  };*/
 
   return (
     <>
@@ -26,6 +27,7 @@ export default function Home() {
       <Supply />
       <Locations />
       <Clients />
+      <Contact />
 
       {/*<NextSeo
         title={SEO.title}

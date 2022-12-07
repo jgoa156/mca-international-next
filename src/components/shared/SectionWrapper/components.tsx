@@ -17,7 +17,11 @@ export const SectionWrapperComponent = styled.section`
 		padding: 50px 50px;
 
 		@media (max-width: 1024px) {
-			padding: 50px 35px;
+			padding: 50px 25px 50px;
+		}
+
+    @media (max-width: 575px) {
+			padding: 50px 25px 0;
 		}
 	}
   

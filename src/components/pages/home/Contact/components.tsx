@@ -1,24 +1,11 @@
 import styled from "styled-components";
 
-export const CardsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  grid-gap: 40px;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 65%;
-	}
-
-  @media (max-width: 575px) {
-		display: block;
-	}
-`;
-
-export const Card = styled.div`
+export const CallingCard = styled.div`
   position: relative;
+  width: 45%;
   height: 100%;
 
+  margin: 0 auto;
   padding: 40px 35px;
 
   background-color: var(--color-1);
@@ -29,14 +16,20 @@ export const Card = styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 
   overflow: hidden;
-  
-  i {
-    margin-bottom: 40px;
-    font-size: 3.5rem;
+
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-family: "Parkson";
     font-size: 2rem;
@@ -45,19 +38,8 @@ export const Card = styled.div`
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  ul {
-    margin-bottom: 0;
-    padding-left: 20px;
+  p {
     color: var(--muted);
-    text-align: left;
-
-    li {
-      margin-bottom: 5px;
-
-      &::marker {
-        font-size: 0.5rem;
-      }
-    }
   }
 
   &:after {
@@ -75,8 +57,45 @@ export const Card = styled.div`
     transform: rotate(45deg);
   }
 
+  hr {
+    margin: 0 15px 35px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+
   @media (max-width: 575px) {
+    width: 100%;
+
 		margin-bottom: 30px;
     padding: 40px 20px;
 	}
+`;
+
+export const Contacts = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px 0;
+  
+  a {
+    align-items: center;
+    margin-bottom: 10px;
+
+    color: var(--secondary-color-2);
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+
+    i {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 `;

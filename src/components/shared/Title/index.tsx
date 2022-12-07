@@ -23,6 +23,10 @@ const Title = styled.h2`
 		background-image: linear-gradient(to right, var(--secondary-color-2), var(--secondary-color));
 		content: "";
 	};
+
+  @media (max-width: 575px) {
+		font-size: 2.2rem;
+	}
 `;
 
 export default Title;

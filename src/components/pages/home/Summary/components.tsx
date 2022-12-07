@@ -94,6 +94,14 @@ export const Pipeline = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 575px) {
+    margin-bottom: 0;
+
+    & > div {
+      display: block;
+    }
+	}
 `;
 
 export const Process = styled.div`
@@ -102,7 +110,6 @@ export const Process = styled.div`
   align-items: center;
 
   i {
-    color: var(--secondary-color);
     font-size: 3rem;
     margin-bottom: 15px;
   }
@@ -110,9 +117,33 @@ export const Process = styled.div`
   h4 {
     font-family: "Parkson";
     font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
   }
+
+  @media (max-width: 1024px) {
+    i {
+      font-size: 2.6rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+    }
+	}
 `;
 
 export const Separator = styled.i`
+  color: var(--color-2);
   font-size: 2rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.4rem;
+	}
+
+  @media (max-width: 575px) {
+    width: 100%;
+    margin: 20px 0 30px;
+		text-align: center;
+    transform: rotate(90deg);
+	}
 `;

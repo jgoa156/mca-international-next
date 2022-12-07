@@ -5,6 +5,10 @@ export const CardsWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+	}
+
   @media (max-width: 575px) {
 		display: block;
 	}

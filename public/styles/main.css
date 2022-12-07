@@ -2,17 +2,17 @@
 :root {
 	--primary-color: #3d5e96;
 	--primary-color-2: #2e3456;
-  --secondary-color: #34cceb;
-  --secondary-color-2: #3499eb;
+	--secondary-color: #34cceb;
+	--secondary-color-2: #3499eb;
 
-	--color-1: #FFF;
-	--color-2: #AAA;
-	--color-3: #DDD;
-	--color-4: #CCC;
+	--color-1: #fff;
+	--color-2: #aaa;
+	--color-3: #ddd;
+	--color-4: #ccc;
 
 	--text-default-color: #222;
 	--text-default-lighter-color: #333;
-  --text-dark-color: #FFF;
+	--text-dark-color: #fff;
 	--muted: #6c757d;
 	--muted-hover: #585e64;
 
@@ -39,11 +39,11 @@
 /*---------------------- GENERAL ----------------------*/
 html {
 	height: 100%;
-	font-size: 16px;
+	font-size: 14px;
 
 	scroll-behavior: smooth;
 	overflow-y: overlay;
-	scroll-padding-top: 65px;
+	scroll-padding-top: 20px;
 }
 body {
 	background-color: whitesmoke;
