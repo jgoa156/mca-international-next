@@ -44,7 +44,7 @@ export default function Banner() {
             </h1>
 
             <div>
-              <ButtonLink href="#contact-us">
+              <ButtonLink href="#contact">
                 <i className="fas fa-envelope" />
                 Contact us
               </ButtonLink>
