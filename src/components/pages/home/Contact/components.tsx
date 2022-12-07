@@ -90,7 +90,6 @@ export const Contacts = styled.div`
     transition: 0.3s;
 
     i {
-      font-size: 1rem;
       margin-right: 10px;
     }
 

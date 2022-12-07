@@ -6,6 +6,7 @@ const ButtonLink = styled.a`
   padding: 10px 35px;
 
   color: var(--text-dark-color);
+  font-size: 1.125rem;
   font-weight: bold;
   text-decoration: none;
   
@@ -17,7 +18,6 @@ const ButtonLink = styled.a`
   transition: 0.3s;
 
   i {
-    font-size: 1.2rem;
     margin-right: 10px;
   }
 
