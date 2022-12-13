@@ -31,8 +31,8 @@ export const CallingCard = styled.div`
   h3 {
     margin-bottom: 10px;
 
-    font-family: "Parkson";
-    font-size: 2rem;
+    font-family: "Lato";
+    font-size: 1.4rem;
     font-weight: bold;
 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);

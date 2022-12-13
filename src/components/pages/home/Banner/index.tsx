@@ -36,11 +36,10 @@ export default function Banner() {
       <div>
         <div>
           <Intro>
-            <img src={`${process.env.img}/logo-full.png`} />
+            <img src={`${process.env.img}/logo-full-color-dark.png`} />
 
             <h1>
-              We supply all your industrial needs,
-              <br />all from one single source
+              Your industrial supply partner
             </h1>
 
             <div>

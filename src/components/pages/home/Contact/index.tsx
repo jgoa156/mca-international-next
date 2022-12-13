@@ -17,8 +17,8 @@ export default function Contact() {
     <SectionWrapper id="contact">
       <div>
         <CallingCard>
-          <Title>Contact us</Title>
-          <img src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png" />
+          <Title>Contact Us</Title>
+          {/*<img src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png" />*/}
 
           <h3>Mônica Dutra</h3>
           <p>President and CEO</p>

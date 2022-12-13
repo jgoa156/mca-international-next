@@ -13,14 +13,14 @@ export default function Sectors() {
     { img: "power", title: "Power generation" },
     { img: "renewable", title: "Renewable energy" },
     { img: "supply", title: "Supply chain" },
-    { img: "midstream", title: "midstream" },
+    { img: "midstream", title: "Midstream" },
     { img: "exploration", title: "Exploration" },
   ];
 
   return (
     <SectionWrapper id="sectors">
       <div>
-        <AlternativeTitle>Sectors {"&"} industries</AlternativeTitle>
+        <AlternativeTitle>Sectors {"&"} Industries</AlternativeTitle>
 
         <CardsWrapper>
           {cards.map((card, index) =>

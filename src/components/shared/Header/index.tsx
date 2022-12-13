@@ -26,12 +26,12 @@ export default function Header() {
   const [showSidenav, setShowSidenav] = useState(false);
 
   const links = [
-    { title: "About us", href: "about" },
+    { title: "About Us", href: "about" },
     { title: "Sectors & Industries", href: "sectors" },
-    { title: "What we supply", href: "supply" },
+    { title: "What We Supply", href: "supply" },
     { title: "Locations", href: "locations" },
-    { title: "Our clients", href: "clients" },
-    { title: "Contact us", href: "contact" },
+    // { title: "Our Clients", href: "clients" },
+    { title: "Contact Us", href: "contact" },
   ];
 
   // Go to top

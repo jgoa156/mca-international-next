@@ -27,11 +27,6 @@
 }
 
 @font-face {
-	font-family: "Parkson";
-	src: url("../fonts/Parkson-Demi.ttf");
-}
-
-@font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/OpenSans-Light.ttf");
 }

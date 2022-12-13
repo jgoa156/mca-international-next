@@ -17,12 +17,12 @@ export default function About() {
   return (
     <SectionWrapper id="about">
       <div>
-        <AlternativeTitle>About us</AlternativeTitle>
+        <AlternativeTitle>About Us</AlternativeTitle>
 
         <CardsWrapper>
           {cards.map((card, index) =>
             <Card key={index}>
-              <i className={card.icon} />
+              {/*<i className={card.icon} />*/}
               <h3>{card.title}</h3>
               <p>{card.description}</p>
             </Card>

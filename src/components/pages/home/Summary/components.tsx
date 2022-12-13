@@ -17,8 +17,8 @@ export const Text = styled.div`
     margin-bottom: 20px;
 
     color: var(--primary-color-2);
-    font-family: "Parkson";
-    font-size: 2rem;
+    font-family: "Lato";
+    font-size: 1.2rem;
     font-weight: bold;
 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ export const Text = styled.div`
   @media (max-width: 575px) {
 		width: 100%;
 
-    margin-bottom: 30px;
+    margin-bottom: 0;
 	}
 `;
 
@@ -115,8 +115,8 @@ export const Process = styled.div`
   }
 
   h4 {
-    font-family: "Parkson";
-    font-size: 2rem;
+    font-family: "Lato";
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 0;
   }
@@ -127,7 +127,7 @@ export const Process = styled.div`
     }
 
     h4 {
-      font-size: 1.8rem;
+      font-size: 1.125rem;
     }
 	}
 `;

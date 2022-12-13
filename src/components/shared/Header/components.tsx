@@ -46,11 +46,12 @@ export const LinkWrapper = styled.div`
 		margin: 0;
 	}
 	a {
-		padding-bottom: 8px;
+		padding-bottom: 14px;
 		margin-left: 20px;
 
-		font-size: 1.825rem;
-		font-family: "Parkson";
+		font-size: 1.125rem;
+    font-weight: bold;
+		font-family: "Lato";
 		text-transform: uppercase;
 		text-decoration: none;
 		border-bottom: 2px solid transparent;

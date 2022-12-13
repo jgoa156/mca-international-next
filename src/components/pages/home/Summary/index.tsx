@@ -37,7 +37,7 @@ export default function Summary() {
       <div>
         <Wrapper>
           <Text>
-            <h2>Since 2015, MCA International Group, Inc supplies:</h2>
+            <h2>MCA International Group, Inc is a leading supplier of:</h2>
 
             <ul>
               {services.map((service, index) => <li key={index}>{service.title}</li>)}
@@ -45,7 +45,8 @@ export default function Summary() {
             <p>to clients in the Oil and Gas, Power Generation, Petrochemical and other industries worldwide.</p>
           </Text>
 
-          <Image src={`${process.env.img}/components/Summary/sourcing.jpg`} />
+          <div style={{ width: "330px" }} />
+          {/*<Image src={`${process.env.img}/components/Summary/sourcing.jpg`} />*/}
         </Wrapper>
 
         <Pipeline>

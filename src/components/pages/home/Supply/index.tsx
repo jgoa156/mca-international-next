@@ -76,7 +76,7 @@ export default function Supply() {
   return (
     <SectionWrapper id="supply">
       <div>
-        <AlternativeTitle>What we supply</AlternativeTitle>
+        <AlternativeTitle>What We Supply</AlternativeTitle>
 
         <CardsWrapper>
           {cards.map((card, i) =>

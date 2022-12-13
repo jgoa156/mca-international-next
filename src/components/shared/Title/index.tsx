@@ -4,8 +4,9 @@ const Title = styled.h2`
 	margin-bottom: 50px;
 	
 	color: var(--primary-color-2);
-	font-size: 2.6rem;
-	font-family: "Parkson";
+	font-size: 1.6rem;
+  font-weight: bold;
+	font-family: "Lato";
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
@@ -20,13 +21,11 @@ const Title = styled.h2`
 		height: 2px;
 		display: block;
 
+    margin-top: 10px;
+
 		background-image: linear-gradient(to right, var(--secondary-color-2), var(--secondary-color));
 		content: "";
 	};
-
-  @media (max-width: 575px) {
-		font-size: 2.2rem;
-	}
 `;
 
 export default Title;

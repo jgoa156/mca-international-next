@@ -26,7 +26,7 @@ export default function Home() {
       <Sectors />
       <Supply />
       <Locations />
-      <Clients />
+      {/*<Clients />*/}
       <Contact />
 
       {/*<NextSeo

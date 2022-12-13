@@ -101,7 +101,7 @@ export const Intro = styled.div`
 	}
 
   @media (max-width: 575px) {
-    margin: 0 35px 100px;
+    margin: 0 25px 100px;
 
 		img {
       height: 75px;

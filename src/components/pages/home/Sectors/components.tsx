@@ -39,7 +39,7 @@ export const Card = styled.div`
 
     padding: 15px 25px;
 
-    font-family: "Parkson";
+    font-family: "Lato";
     color: var(--text-dark-color);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
@@ -48,7 +48,7 @@ export const Card = styled.div`
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 
     h3 {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
 
