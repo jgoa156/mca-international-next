@@ -44,6 +44,9 @@ export default function Contact() {
           <p>
             US Toll-Free: +1-844-622-4685 (+1-844-MCA-INTL)
           </p>
+          <p>
+            <a href="mailto:sales@mcaig.com"><i className="fa-solid fa-envelope" />sales@mcaig.com</a>
+          </p>
         </CallingCard>
       </div>
     </SectionWrapper>

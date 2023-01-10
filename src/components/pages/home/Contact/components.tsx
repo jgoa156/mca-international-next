@@ -61,24 +61,6 @@ export const CallingCard = styled.div`
     margin: 0 15px 35px;
   }
 
-  @media (max-width: 1024px) {
-    width: 70%;
-  }
-
-  @media (max-width: 575px) {
-    width: 100%;
-
-		margin-bottom: 30px;
-    padding: 40px 20px;
-	}
-`;
-
-export const Contacts = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  margin: 25px 0;
-  
   a {
     align-items: center;
     margin-bottom: 10px;
@@ -97,4 +79,22 @@ export const Contacts = styled.div`
       color: var(--primary-color);
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+
+		margin-bottom: 30px;
+    padding: 40px 20px;
+	}
+`;
+
+export const Contacts = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px 0;
 `;
