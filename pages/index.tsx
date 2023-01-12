@@ -11,12 +11,12 @@ import Clients from "components/pages/home/Clients";
 import Contact from "components/pages/home/Contact";
 
 export default function Home() {
-  /*const SEO = {
+  const SEO = {
     title: "MCA International",
-    description: "Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil.",
-    url: "https://guilherme.vercel.app",
+    description: "Your industrial supply partner.",
+    url: "https://mca-international-next.vercel.app/",
     image: "/img/SEO/preview.jpg"
-  };*/
+  };
 
   return (
     <>
@@ -26,10 +26,9 @@ export default function Home() {
       <Sectors />
       <Supply />
       <Locations />
-      {/*<Clients />*/}
       <Contact />
 
-      {/*<NextSeo
+      <NextSeo
         title={SEO.title}
         description={SEO.description}
         canonical={SEO.url}
@@ -51,67 +50,127 @@ export default function Home() {
               secureUrl: `${SEO.url}${SEO.image}`,
               alt: "Preview Image",
               type: "image/jpeg",
-              width: 1295,
-              height: 621
+              width: 1000,
+              height: 535
             }
           ],
           article: {
             tags: [
-              "software developer",
-              "software",
-              "programmer",
-              "dev",
-              "developer",
-              "designer",
-              "fullstack",
-              "full-stack",
-              "full stack",
-              "back-end",
-              "back end",
-              "front-end",
-              "front end",
-              "design",
-              "brazil",
-              "brazilian",
-              "remote",
-              "worker",
-
-              "javascript",
-              "js",
-              "java",
-              "python",
-              "php",
-              "cakephp",
-              "laravel",
-              "springboot",
-              "spring",
-              "designer",
-              "ui",
-              "ui designer",
-              "ux",
-              "ux designer",
-              "next",
-              "next.js",
-              "nextjs",
-              "react",
-              "react.js",
-              "reactjs",
-              "node",
-              "node.js",
-              "nodejs",
-              "express",
-              "express.js",
-              "expressjs",
-
-              "mysql",
-              "sequelize",
-              "wordpress",
-              "jquery",
-              "c",
-              "aosp",
-              "figma",
-              "docker",
-              "kubernetes"
+              "accounting",
+              "actuators",
+              "asset",
+              "asset management",
+              "automation",
+              "bid tabulation",
+              "bid tabulation and award",
+              "brokerage",
+              "budgeting",
+              "buildings",
+              "coating",
+              "compressors",
+              "contract",
+              "contract management",
+              "control",
+              "customs",
+              "customs brokerage",
+              "drilling",
+              "drilling equipment",
+              "drilling rigs",
+              "electrical",
+              "electrical gear",
+              "electronics",
+              "engines",
+              "environmental",
+              "equipment",
+              "fat",
+              "feasibility",
+              "feasibility study",
+              "filtration",
+              "fittings",
+              "flanges",
+              "forwarding",
+              "freight",
+              "freight forwarding",
+              "full tendering process",
+              "gear",
+              "general",
+              "generators",
+              "handling",
+              "hardware",
+              "hose",
+              "hose tube",
+              "hvac",
+              "hydraulics",
+              "implementation",
+              "industrial",
+              "industrial mro supplies",
+              "inspection",
+              "instrumentation",
+              "lab",
+              "lab supplies",
+              "legal",
+              "logistics",
+              "maintenance",
+              "management",
+              "material",
+              "material handling",
+              "material inspection",
+              "material sourcing",
+              "material specification",
+              "motors",
+              "mro",
+              "mrp",
+              "mrp system implementation",
+              "operations",
+              "outsourcing",
+              "packaging",
+              "paint",
+              "pipe",
+              "plumbing",
+              "pneumatics",
+              "prefabricated",
+              "prefabricated skids",
+              "preparation",
+              "pressure",
+              "pressure vessels",
+              "process",
+              "procurement",
+              "procurement outsourcing",
+              "project",
+              "project logistics",
+              "project management",
+              "pump",
+              "quality",
+              "quality control",
+              "refrigeration",
+              "rfp",
+              "rfp preparation",
+              "rigs",
+              "safety",
+              "security",
+              "separation",
+              "shipping",
+              "skids",
+              "sourcing",
+              "specialty",
+              "specialty valves",
+              "specification",
+              "study",
+              "supplies",
+              "support",
+              "system",
+              "technical",
+              "technical support",
+              "tendering",
+              "tools",
+              "tube",
+              "valves",
+              "vendor",
+              "vendor management",
+              "vessels",
+              "warehousing",
+              "warehousing management",
+              "welding"
             ]
           }
         }}
@@ -120,7 +179,7 @@ export default function Home() {
           site: "@site",
           cardType: "summary_large_image",
         }}
-      />*/}
+      />
     </>
   );
 }

@@ -25,14 +25,14 @@ function App(props) {
 
         <title>MCA International</title>
 
-        {/*<meta
+        <meta
           name="description"
-          content="Hi, I'm Guilherme Almeida, a 21-year-old Full-stack web and mobile developer based in Manaus, Brazil."
+          content="Your industrial supply partner."
         />
         <meta
           name="image"
-          content="https://jgoa156.vercel.app/img/SEO/preview.jpg"
-        />*/}
+          content="https://mca-international-next.vercel.app/img/SEO/preview.jpg"
+        />
 
         {/*Favicon*/}
         <link
