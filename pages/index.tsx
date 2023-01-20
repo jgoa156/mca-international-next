@@ -50,8 +50,8 @@ export default function Home() {
               secureUrl: `${SEO.url}${SEO.image}`,
               alt: "Preview Image",
               type: "image/jpeg",
-              width: 1000,
-              height: 535
+              width: 2048,
+              height: 1336
             }
           ],
           article: {
