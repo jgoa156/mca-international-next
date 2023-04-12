@@ -57,3 +57,49 @@ export const Card = styled.div`
 		margin-bottom: 30px;
 	}
 `;
+
+export const CardAlt = styled.div`
+  position: relative;
+
+  padding: 30px;
+
+  background-color: var(--color-1);
+  text-align: center;
+  color: var(--primary-color-2);
+
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    font-family: "Lato";
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    i {
+      width: 30px;
+      font-size: 1.8rem;
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 575px) {
+		margin-bottom: 20px;
+    padding: 15px 25px;
+
+    h3 {
+      font-size: 1.2rem;
+
+      i {
+        font-size: 1.6rem;
+      }
+    }
+	}
+`;
